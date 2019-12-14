@@ -151,9 +151,9 @@ body {
   align-self: flex-start;
   overflow: hidden;
   background: linear-gradient(to right, #444444 0%, white 75%, white 75%);
-  animation: run 7s 0s infinite;
+  animation: run 15s 0s infinite;
   animation-fill-mode: forwards;
-  animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+  animation-timing-function: cubic-bezier(0.5, 0.3, 0, 1);
 }
 
 @keyframes run {
