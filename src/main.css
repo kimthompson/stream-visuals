@@ -39,9 +39,9 @@
 }
 
 /* Uncomment this if you need to test on dark */
-body {
-  background-color: black;
-}
+/*body {*/
+  /*background-color: black;*/
+/*}*/
 
 .canvas {
   width: var(--m-width);
@@ -54,14 +54,23 @@ body {
 .canvas_right {
   width: var(--m-sidebar-width);
   height: var(--m-sidebar-height);
-  align-self: flex-end;
   display: grid;
+  align-self: flex-end;
   justify-content: flex-end;
   align-items: space-between;
+  background: url(./assets/brick-wall.png)
 }
 
-.canvas_right.canvas_right-gradient {
-  background-image: linear-gradient(
+.mask1 {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    var(--c-ebony-clay-0) 0%,
+    var(--c-ebony-clay-60) 10%,
+    var(--c-ebony-clay-80) 30%,
+    var(--c-ebony-clay) 60%,
+    var(--c-ebony-clay) 100%
+  );
+  mask-image: linear-gradient(
     to right,
     var(--c-ebony-clay-0) 0%,
     var(--c-ebony-clay-60) 10%,
