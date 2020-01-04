@@ -12,19 +12,19 @@
   /* Color scheme created by me using Coolors.co (https://coolors.co/191716-433a3f-ed1f70-2d3047-6ecafa) */
   /* Colors named using the Name that Color tool (http://chir.ag/projects/name-that-color/) */
 
-  --f-family-main: "NeoncityScript";
+  --f-family-main: "NeoncityScript", cursive, sans-serif;
   --f-family-display: "NeoncityDisplay";
 
   --c-ebony-clay: #2d3047;
   --c-white: #eeeeee;
   --c-black: #111111;
   --c-neon-blue: rgb(198, 226, 255);
-  --c-neon-blue-over: 202, 228, 225; 
-  --c-neon-blue-under: 30, 132, 242; 
+  --c-neon-blue-over: 202, 228, 225;
+  --c-neon-blue-under: 30, 132, 242;
   --c-neon-blue-root: 198, 226, 255;
   --c-neon-pink: rgb(255, 204, 232);
-  --c-neon-pink-over: 255, 155, 210; 
-  --c-neon-pink-under: 255, 211, 235; 
+  --c-neon-pink-over: 255, 155, 210;
+  --c-neon-pink-under: 255, 211, 235;
   --c-neon-pink-root: 255, 204, 232;
 
   --c-ebony-clay-0: #2d304700;
@@ -56,6 +56,22 @@ body {
   background-color: black;
 }
 
+.btn {
+  font-family: var(--f-family-main);
+  color: var(--c-neon-pink);
+  animation: neon_pink 0.08s ease-in-out infinite alternate;
+  font-size: 50px;
+  width: 320px;
+  height: 100px;
+  border: var(--b-standard);
+  background: url(./assets/brick-wall-black.png);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin: 5px;
+  font-weight: 100;
+}
+
 .canvas {
   width: var(--m-width);
   height: var(--m-height);
@@ -74,7 +90,7 @@ body {
 }
 
 .canvas_right.gradient {
-  background: url(./assets/brick-wall-black.png)
+  background: url(./assets/brick-wall-black.png);
 }
 
 .mask1 {
@@ -132,7 +148,12 @@ body {
   left: -10vw;
   align-self: flex-start;
   overflow: hidden;
-  background: linear-gradient(to right, #444444 0%, var(--c-neon-pink) 75%, var(--c-neon-pink) 75%);
+  background: linear-gradient(
+    to right,
+    #444444 0%,
+    var(--c-neon-pink) 75%,
+    var(--c-neon-pink) 75%
+  );
   animation: run 15s 0s infinite;
   animation-fill-mode: forwards;
   animation-timing-function: cubic-bezier(0.5, 0.3, 0, 1);
@@ -149,8 +170,7 @@ body {
 
 @keyframes neon_blue {
   from {
-    text-shadow:
-      0 0 6px rgba(var(--c-neon-blue-over), 0.92),
+    text-shadow: 0 0 6px rgba(var(--c-neon-blue-over), 0.92),
       0 0 30px rgba(var(--c-neon-blue-over), 0.34),
       0 0 12px rgba(var(--c-neon-blue-under), 0.52),
       0 0 21px rgba(var(--c-neon-blue-under), 0.92),
@@ -158,8 +178,7 @@ body {
       0 0 54px rgba(var(--c-neon-blue-under), 0.92);
   }
   to {
-    text-shadow:
-      0 0 6px rgba(var(--c-neon-blue-over), 0.98),
+    text-shadow: 0 0 6px rgba(var(--c-neon-blue-over), 0.98),
       0 0 30px rgba(var(--c-neon-blue-over), 0.42),
       0 0 12px rgba(var(--c-neon-blue-under), 0.58),
       0 0 22px rgba(var(--c-neon-blue-under), 0.84),
@@ -170,8 +189,7 @@ body {
 
 @keyframes neon_pink {
   from {
-    text-shadow:
-      0 0 6px rgba(var(--c-neon-pink-over), 0.92),
+    text-shadow: 0 0 6px rgba(var(--c-neon-pink-over), 0.92),
       0 0 30px rgba(var(--c-neon-pink-over), 0.34),
       0 0 12px rgba(var(--c-neon-pink-under), 0.52),
       0 0 21px rgba(var(--c-neon-pink-under), 0.92),
@@ -179,8 +197,7 @@ body {
       0 0 54px rgba(var(--c-neon-pink-under), 0.92);
   }
   to {
-    text-shadow:
-      0 0 6px rgba(var(--c-neon-pink-over), 0.98),
+    text-shadow: 0 0 6px rgba(var(--c-neon-pink-over), 0.98),
       0 0 30px rgba(var(--c-neon-pink-over), 0.42),
       0 0 12px rgba(var(--c-neon-pink-under), 0.58),
       0 0 22px rgba(var(--c-neon-pink-under), 0.84),
@@ -191,8 +208,7 @@ body {
 
 @keyframes neon_box {
   from {
-    box-shadow:
-      0 0 2px rgba(var(--c-neon-pink-over), 0.92),
+    box-shadow: 0 0 2px rgba(var(--c-neon-pink-over), 0.92),
       0 0 10px rgba(var(--c-neon-pink-over), 0.34),
       0 0 4px rgba(var(--c-neon-pink-under), 0.52),
       0 0 7px rgba(var(--c-neon-pink-under), 0.92),
@@ -200,8 +216,7 @@ body {
       0 0 25px rgba(var(--c-neon-pink-under), 0.92);
   }
   to {
-    box-shadow:
-      0 0 2px rgba(var(--c-neon-pink-over), 0.92),
+    box-shadow: 0 0 2px rgba(var(--c-neon-pink-over), 0.92),
       0 0 10px rgba(var(--c-neon-pink-over), 0.34),
       0 0 4px rgba(var(--c-neon-pink-under), 0.52),
       0 0 7px rgba(var(--c-neon-pink-under), 0.92),
@@ -224,7 +239,7 @@ body {
   font-family: var(--f-family-main);
   font-size: 45px;
   color: var(--c-neon-pink);
-  animation: neon_pink .08s ease-in-out infinite alternate;
+  animation: neon_pink 0.08s ease-in-out infinite alternate;
 }
 
 /* TODO: Consider making this part constantly scroll? Especially if I determine any more information I want to place along the bottom */
@@ -244,12 +259,9 @@ body {
   color: var(--c-neon-blue);
 }
 
-.link_container {
-}
-
 .link_item {
   margin-left: var(--m-breathing-room);
-  animation: neon_blue .08s ease-in-out infinite alternate;
+  animation: neon_blue 0.08s ease-in-out infinite alternate;
 }
 
 .link_label {
@@ -258,5 +270,5 @@ body {
   margin-right: var(--m-breathing-room);
   margin-top: var(--m-breathing-room);
   color: var(--c-neon-pink);
-  animation: neon_pink .08s ease-in-out infinite alternate;
+  animation: neon_pink 0.08s ease-in-out infinite alternate;
 }
