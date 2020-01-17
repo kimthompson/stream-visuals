@@ -80,6 +80,15 @@ body {
   flex-direction: column;
 }
 
+.canvas-offline {
+  width: 100vw;
+  height: 100vh;
+  background: url(./assets/brick-wall-black.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .canvas_right {
   width: var(--m-sidebar-width);
   height: var(--m-sidebar-height);
@@ -240,6 +249,28 @@ body {
   font-size: 45px;
   color: var(--c-neon-pink);
   animation: neon_pink 0.08s ease-in-out infinite alternate;
+}
+
+.title-offline {
+  margin-left: 15px;
+  margin-top: 5px;
+  font-family: var(--f-family-main);
+  font-size: 125px;
+  color: var(--c-neon-pink);
+  animation: neon_pink 0.08s ease-in-out infinite alternate;
+  line-height: 1;
+}
+
+.socialMedia {
+  font-family: var(--f-family-main);
+  font-size: 40px;
+  color: var(--c-neon-blue);
+  animation: neon_blue 0.08s ease-in-out infinite alternate;
+  line-height: 1;
+}
+
+.socialMedia > i {
+  margin-right: 15px;
 }
 
 /* TODO: Consider making this part constantly scroll? Especially if I determine any more information I want to place along the bottom */
